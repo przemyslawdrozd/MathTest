@@ -21,4 +21,12 @@ public class MathApp {
     public double minus(int a, int b) {
         return mathService.minus(a, b);
     }
+
+    public double aggregate(int a, int b) {
+        return mathService.multiply(a,b) - mathService.multiply(a,b);
+    }
+
+    public double addTimesTwo(int a, int b) {
+        return mathService.add(a , b) + mathService.minus(a, b);
+    }
 }

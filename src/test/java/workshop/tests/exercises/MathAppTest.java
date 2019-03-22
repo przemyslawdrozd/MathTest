@@ -42,4 +42,15 @@ public class MathAppTest {
         when(mathService.minus(5, 4)).thenReturn(5d);
         assertEquals(5d, mathApp.minus(5, 4), 0d);
     }
+    @Test
+    public void aggregate() {
+        when(mathService.multiply(5, 4)).thenReturn(20d);
+        assertEquals(0, mathApp.aggregate(5, 4), 0d);
+    }
+
+    @Test
+    public void addTimesTwo() {
+        when(mathService.add(5,5)).thenReturn(10d);
+        assertEquals(20d, mathApp.addTimesTwo(5,5), 0d);
+    }
 }
